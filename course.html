@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
+    <title>GO Trader</title>
+    <style>
+        *, *::before, *::after{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+            display: block;
+        }
+
+        img{
+            border: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:link,a:visited{
+        }
+
+        a:hover {
+        }
+
+        a, a:focus, button , input{
+            outline: none;
+            font-family: inherit;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        ul,li{
+            list-style-type: none;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+            display: block;
+            overflow: hidden;
+            background: #cecece1a;
+        }
+        .course{
+            max-width: 750px;
+            margin: 0 auto;
+            height: 100%;
+            overflow-y: auto;
+            padding: 30px 15px;
+            background: #ffffff;
+        }
+
+        .course img{
+            display: block;
+            max-width: 100%;
+        }
+        .course img.w50{
+            width: 49%;
+            float: left;
+        }
+        .course img.w50:nth-of-type(2){
+            float: right;
+        }
+        .course a{
+            color: red;
+        }
+        .course h4{
+            font-size: 18px;
+            font-weight: normal;
+            color: #000;
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+
+        .course p{
+            font-size: 16px;
+            /*text-indent: 35px;*/
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #333;
+            overflow: hidden;
+        }
+        .course span{
+            color: red;
+        }
+        .course small{
+            color: #999;
+        }
+        .course ul{
+            display: block;
+            overflow: hidden;
+        }
+        .course ul li{
+            display: block;
+            width: 25%;
+            text-align: center;
+            float: left;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="course">
+        <ul>
+            <li><a href="#注册登录">注册登录</a></li>
+            <li><a href="#交易对冲">交易对冲</a></li>
+            <li><a href="#充币">充币</a></li>
+            <li><a href="#分享">分享</a></li>
+        </ul>
+        <h4 id="注册登录">一、下载 <a target="_blank" href="https://gotrader.io/">GO Trader</a> APP，并注册登录  APP</h4>
+        <p>
+            1.<a target="_blank" href="https://gotrader.io/">点击下载APP</a>，安装APP，进行注册登录，如果有邀请人请填写 <a href="#分享">邀请码</a>，进入首页。
+        </p>
+        <p>
+            <div style="overflow: hidden;">
+                <img src="./images/1.jpg" alt="" class="w50">
+                <img src="./images/2.jpg" alt="" class="w50">
+            </div>
+        </p>
+        <p>
+            2. 用户名下面的三个数字分别是：GO Trader 的 USDT余额、交易对冲的成交量 <small>(单位是货币币种)</small>、你邀请的会员总充币 <small>(包括本人的)</small>
+            <img src="./images/3.jpg" alt="" >
+        </p>
+
+        <h4 id="交易对冲">二、交易对冲</h4>
+        <p>
+            1.登录 <a target="_blank" href="https://www.futureetf.com/signin">futureetf</a> ，
+            进入 <a target="_blank" href="https://www.futureetf.com/user">个人中心</a>，
+            去设置<a href="https://www.futureetf.com/user/api">我的API</a>。
+            <img src="./images/10.png" alt="" >
+        </p>
+        <p>
+            2.点击新建api，如果已新建过api请点击查看获取，复制 apiKey 和 secret_key。
+            <img src="./images/11.png" alt="">
+        </p>
+        <p>
+            3.打开GO Trader 登录进入首页，点击 交易对冲， 点击交易对冲页面右上角添加按钮，进入购买对冲页面。
+            <div style="overflow: hidden;">
+                <img src="./images/3.jpg" alt="" class="w50">
+                <img src="./images/4.jpg" alt="" class="w50">
+            </div>
+        </p>
+        <p>
+            4.输入您的交易对冲 备注名，粘贴 <span>apiKey</span> 和 <span>secret_key</span>，交易对冲比例推荐 <span>0.85</span> <small>(比例越接近 1 对冲量越大)</small>，输入 <span>货品币种（ETF）</span>和 <span>计价货币（USDT）</span>，
+            选择要购买的 <span>对冲时间（单位月）</span>，对冲时间一天平均 <span>2USDT</span>。
+            如果选择的时间为0，系统赠送你3小时的体验时间。
+            <img src="./images/7.jpg" alt="">
+        </p>
+        
+        <p>
+            5.进入 交易对冲列表页，点击列表进入详情页，进行<span>开始、停止、续费</span>操作。
+            <div style="overflow: hidden;">
+                <img src="./images/4.jpg" alt="" class="w50">
+                <img src="./images/5.jpg" alt="" class="w50">
+            </div>
+            <div style="overflow: hidden;">
+                <img src="./images/6.jpg" alt="" class="w50">
+            </div>
+        </p>
+        
+        <h4 id="充币">三、充币</h4>
+        <p>
+            充币平均<span>15分钟</span>到账 <small>(具体到账时间以区块打包速度为准)</small>
+            <div style="overflow: hidden;">
+                <img src="./images/12.jpg" alt="" class="w50">
+                <img src="./images/9.jpg" alt="" class="w50">
+            </div>
+        </p>
+
+        <h4 id="分享">四、分享</h4>
+        <p>
+            推广邀请，GO Trader 会统一发放奖励。
+            <img src="./images/8.jpg" alt="" >
+        </p>
+    </section>
+</body>
+</html>
